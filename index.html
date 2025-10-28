@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bean - Artisan Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-coffee"></i>
+                <span>Brew & Bean</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Indian Coffee Crafted with Passion</h1>
+            <p class="hero-subtitle">Experience the perfect blend of tradition and innovation in every cup</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Order Now</button>
+                <button class="btn btn-secondary">View Menu</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="coffee-beans-animation">
+                <!-- Attractive coffee cup photo (Unsplash). Replace with local file if desired -->
+                <img class="hero-cup" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80" alt="Cup of coffee">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-leaf feature-icon"></i>
+                    <h3>Premium Beans</h3>
+                    <p>Sourced from the finest coffee plantations worldwide</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-fire feature-icon"></i>
+                    <h3>Freshly Roasted</h3>
+                    <p>Daily roasting ensures maximum flavor and aroma</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-heart feature-icon"></i>
+                    <h3>Made with Love</h3>
+                    <p>Every cup is crafted by our skilled baristas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <p>Discover our handcrafted beverages and delicious treats</p>
+            </div>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="coffee" data-animation="fade-scale">Coffee</button>
+                <button class="category-btn" data-category="tea" data-animation="slide-up">Tea</button>
+                <button class="category-btn" data-category="pastries" data-animation="pop">Pastries</button>
+                <button class="category-btn" data-category="sandwiches" data-animation="flip">Sandwiches</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Coffee Items -->
+                <div class="menu-items" data-category="coffee">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Espresso</h4>
+                            <p>Rich, bold shot of pure coffee essence</p>
+                            <span class="price">₹70</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Cappuccino</h4>
+                            <p>Espresso with steamed milk foam</p>
+                            <span class="price">₹100</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Latte</h4>
+                            <p>Smooth espresso with steamed milk</p>
+                            <span class="price">₹125</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <i class="fas fa-glass-whiskey"></i>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Cold Brew</h4>
+                            <p>Slow-steeped, smooth and refreshing</p>
+                            <span class="price">₹90</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Cold Coffee</h4>
+                            <p>Chilled coffee beverage blended with milk and ice</p>
+                            <span class="price">₹80</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tea Items -->
+                <div class="menu-items" data-category="tea" style="display: none;">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Green Tea</h4>
+                            <p>Organic Japanese green tea</p>
+                            <span class="price">₹30</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Chamomile</h4>
+                            <p>Calming herbal infusion</p>
+                            <span class="price">₹25</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <i class="fas fa-glass-whiskey"></i>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Iced Tea</h4>
+                            <p>Refreshing black tea with lemon</p>
+                            <span class="price">₹55</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pastries Items -->
+                <div class="menu-items" data-category="pastries" style="display: none;">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Croissant</h4>
+                            <p>Buttery, flaky French pastry</p>
+                            <span class="price">₹70</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <i class="fas fa-cookie"></i>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Chocolate Chip Cookie</h4>
+                            <p>Warm, gooey chocolate chip cookie</p>
+                            <span class="price">₹70</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Slice of Cake</h4>
+                            <p>Daily selection of fresh cakes</p>
+                            <span class="price">₹60</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sandwiches Items -->
+                <div class="menu-items" data-category="sandwiches" style="display: none;">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <i class="fas fa-hamburger"></i>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Club Sandwich</h4>
+                            <p>Triple-decker with turkey, bacon, lettuce</p>
+                            <span class="price">₹40</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                        <div class="menu-item-content">
+                            <h4>Vegetarian Panini</h4>
+                            <p>Grilled vegetables with mozzarella</p>
+                            <span class="price">₹35</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2015, Brew & Bean started as a small dream to bring exceptional coffee to our community. What began as a tiny corner shop has grown into a beloved local institution.</p>
+                    <p>Our master roasters travel the world to source the finest beans, and our skilled baristas transform them into liquid gold. Every cup tells a story of passion, craftsmanship, and dedication to quality.</p>
+                    <p>We believe that great coffee has the power to bring people together, create moments of joy, and fuel dreams. That's why we pour our hearts into every brew we serve.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>8+</h3>
+                            <p>Years of Excellence</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Coffee Varieties</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>Happy Customers Daily</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <i class="fas fa-coffee coffee-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <p>A glimpse into our coffee shop experience</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <i class="fas fa-coffee"></i>
+                    <span>Artisan Coffee</span>
+                </div>
+                <div class="gallery-item">
+                    <i class="fas fa-store"></i>
+                    <span>Cozy Atmosphere</span>
+                </div>
+                <div class="gallery-item">
+                    <i class="fas fa-users"></i>
+                    <span>Community Hub</span>
+                </div>
+                <div class="gallery-item">
+                    <i class="fas fa-mug-hot"></i>
+                    <span>Perfect Brew</span>
+                </div>
+                <div class="gallery-item">
+                    <i class="fas fa-leaf"></i>
+                    <p>Fresh Ingredients</p>
+                </div>
+                <div class="gallery-item">
+                    <i class="fas fa-heart"></i>
+                    <span>Made with Love</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Us</h2>
+                <p>We'd love to see you at our coffee shop</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>No. 18, Lotus Avenue, Thindal Ring Road, Erode – 638012, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Fri: 6:30 AM - 8:00 PM</p>
+                            <p>Sat-Sun: 7:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>6380112394</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>lingesanbrew&bean@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-coffee"></i>
+                    <span>Brew & Bean</span>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Brew & Bean. All rights reserved. Made with <i class="fas fa-heart"></i> and coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
